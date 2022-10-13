@@ -4,7 +4,7 @@ import SemiIMG from "../assets/semi.png";
 
 const Car = ({ vehicle }) => {
   return (
-    <div className="car-container">
+    <div className={vehicle ? "car-container" : "semi-container"}>
       <img
         className={vehicle ? "car" : "semi"}
         src={vehicle ? CarIMG : SemiIMG}

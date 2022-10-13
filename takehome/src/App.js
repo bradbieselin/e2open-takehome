@@ -7,11 +7,15 @@ function App() {
   const [vehicle, setVehicle] = useState(true);
 
   return (
-    <div className="App">
-      <button onClick={(e) => setVehicle(!vehicle)}>Change Vehicle</button>
-      <Car vehicle={vehicle} />
-      <InfiniteRoad />
-    </div>
+    <>
+      <div className="navbar">
+        <button onClick={(e) => setVehicle(!vehicle)}>Change Vehicle</button>
+      </div>
+      <div className="container">
+        <Car vehicle={vehicle} />
+        <InfiniteRoad />
+      </div>
+    </>
   );
 }
 

@@ -1,21 +1,25 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   background: radial-gradient(#9bdfff, #009be4);
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
 .horizontal {
   position: relative;
-  width: 800px;
-  height: 160px;
+  width: 1000px;
+  height: 230px;
   background: #525252;
-  transform-origin: top;
+  transform-origin: bottom;
   transform-style: preserve-3d;
-  transform: perspective(500px) rotateX(40deg) skew(50deg, -20deg);
+  transform: perspective(650px) rotateX(40deg) skew(50deg, -20deg);
 }
 
 .horizontal:before {
@@ -80,8 +84,13 @@ body {
 }
 
 .car-container {
-  margin-bottom: 7rem;
-  margin-left: 6rem;
+  margin-bottom: 21rem;
+  margin-left: 15rem;
+}
+
+.semi-container {
+  margin-bottom: 32rem;
+  margin-left: 15rem;
 }
 
 @keyframes driving {
