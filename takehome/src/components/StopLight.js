@@ -3,12 +3,15 @@ import React from "react";
 const StopLight = ({ onLightChange, lightStatus }) => {
   return (
     <div className="stoplight-container">
-      <button onClick={onLightChange("Green")}>Green</button>
-      <button onClick={onLightChange("Left-Turn Green")}>
+      <button onClick={(e) => onLightChange("Green")}>Green</button>
+      <button onClick={(e) => onLightChange("Left-Turn Green")}>
         Left-Turn Green
       </button>
-      <button onClick={onLightChange("Yellow")}>Yellow</button>
-      <button onClick={onLightChange("Red")}>Red</button>
+      <button onClick={(e) => onLightChange("Yellow")}>Yellow</button>
+      <button onClick={(e) => onLightChange("Red")}>Red</button>
+      <div>
+        <div>Current Color: {lightStatus}</div>
+      </div>
     </div>
   );
 };
