@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import CarIMG from "../assets/21c.png";
+import CarIMG from "../assets/suv.png";
 import SemiIMG from "../assets/semi.png";
 
 const Car = ({ vehicle }) => {
   return (
-    <div className={vehicle ? "car-container" : "semi-container"}>
+    <div className={vehicle ? "semi-container moving" : "car-container"}>
       <img
-        className={vehicle ? "car" : "semi"}
-        src={vehicle ? CarIMG : SemiIMG}
+        className={vehicle ? "semi" : "car"}
+        src={vehicle ? SemiIMG : CarIMG}
         alt="car"
-      ></img>{" "}
+      ></img>
     </div>
   );
 };

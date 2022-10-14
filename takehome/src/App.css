@@ -5,17 +5,26 @@ body {
   background: radial-gradient(#9bdfff, #009be4);
 }
 
+.navbar {
+  background: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 80vh;
 }
 
 .horizontal {
   position: relative;
   width: 1000px;
-  height: 230px;
+  height: 250px;
   background: #525252;
   transform-origin: bottom;
   transform-style: preserve-3d;
@@ -84,13 +93,13 @@ body {
 }
 
 .car-container {
-  margin-bottom: 21rem;
-  margin-left: 15rem;
+  margin-bottom: 27rem;
+  margin-left: 12rem;
 }
 
 .semi-container {
   margin-bottom: 32rem;
-  margin-left: 15rem;
+  margin-left: 12rem;
 }
 
 @keyframes driving {
@@ -103,4 +112,22 @@ body {
   0% {
     transform: translateY(1px) translateX(20px);
   }
+}
+
+.vehicle-status {
+  text-align: center;
+  font-size: 2rem;
+  width: 50%;
+  float: left;
+}
+
+.stoplight-container {
+  text-align: center;
+  width: 50%;
+  float: right;
+}
+
+.status-area {
+  width: 100%;
+  height: 5rem;
 }
